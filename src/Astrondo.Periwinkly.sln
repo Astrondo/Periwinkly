@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly", "Astrondo.Periwinkly\Astrondo.Periwinkly.csproj", "{149BAC62-D04D-47B2-9317-985A38D52FFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly.Discovery", "Astrondo.Periwinkly.Discovery\Astrondo.Periwinkly.Discovery.csproj", "{378015D9-C9BA-4013-88CE-9B7F29EF088E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly.TestTool", "Astrondo.Periwinkly.TestTool\Astrondo.Periwinkly.TestTool.csproj", "{14A17BA1-52F7-4A21-BD90-0362915C25A2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{04BC6D40-8FE4-4324-943E-51E406CBC297}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly.Tests", "Astrondo.Periwinkly.Tests\Astrondo.Periwinkly.Tests.csproj", "{C084E970-B8B1-40D6-B4CD-0AF686CB59BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{149BAC62-D04D-47B2-9317-985A38D52FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149BAC62-D04D-47B2-9317-985A38D52FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149BAC62-D04D-47B2-9317-985A38D52FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149BAC62-D04D-47B2-9317-985A38D52FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{378015D9-C9BA-4013-88CE-9B7F29EF088E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{378015D9-C9BA-4013-88CE-9B7F29EF088E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{378015D9-C9BA-4013-88CE-9B7F29EF088E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{378015D9-C9BA-4013-88CE-9B7F29EF088E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14A17BA1-52F7-4A21-BD90-0362915C25A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14A17BA1-52F7-4A21-BD90-0362915C25A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14A17BA1-52F7-4A21-BD90-0362915C25A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14A17BA1-52F7-4A21-BD90-0362915C25A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C084E970-B8B1-40D6-B4CD-0AF686CB59BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C084E970-B8B1-40D6-B4CD-0AF686CB59BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C084E970-B8B1-40D6-B4CD-0AF686CB59BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C084E970-B8B1-40D6-B4CD-0AF686CB59BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{14A17BA1-52F7-4A21-BD90-0362915C25A2} = {04BC6D40-8FE4-4324-943E-51E406CBC297}
+		{C084E970-B8B1-40D6-B4CD-0AF686CB59BF} = {04BC6D40-8FE4-4324-943E-51E406CBC297}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28C1B733-4A24-43DA-AD2E-247CA71BF189}
+	EndGlobalSection
+EndGlobal
