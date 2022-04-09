@@ -50,6 +50,6 @@ steps:
     feedsToUse: 'select'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/**/*.nupkg;!$(Build.ArtifactStagingDirectory)/**/*.symbols.nupkg'
     nuGetFeedType: 'internal'
-    publishVstsFeed: 'TestFeed'
+    publishVstsFeed: 'ad5f565d-1a17-41d1-9987-f541ca645573/600fc674-71db-410e-877f-6c8da25c7868'
     versioningScheme: 'off'
     allowPackageConflicts: true
