@@ -1,24 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net6.0;netstandard2.0;net48;</TargetFrameworks>
-    <Authors>Astrondo</Authors>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Astrondo/Periwinkly</PackageProjectUrl>
-    <Description>Shelly Iot device discovery client .NET 6, .NET Standard 2.0, .NET Framework</Description>
-    <Copyright>© mindrevolution digital Ltd 2022</Copyright>
-    <PackageTags>shelly;periwinkly;netstandard;I0T</PackageTags>
-    <Product>Astrondo.Periwinkly.Discovery</Product> 
-   </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;netstandard2.0;net48;</TargetFrameworks>
+		<Authors>Astrondo</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/Astrondo/Periwinkly</PackageProjectUrl>
+		<Description>Shelly Iot device discovery client .NET 6, .NET Standard 2.0, .NET Framework</Description>
+		<Copyright>© mindrevolution digital Ltd 2022</Copyright>
+		<PackageTags>shelly;periwinkly;netstandard;I0T</PackageTags>
+		<Product>Astrondo.Periwinkly.Discovery</Product>
+		<PackageIcon>Logo_128.png</PackageIcon>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Zeroconf" Version="3.6.11" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Zeroconf" Version="3.6.11" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Astrondo.Periwinkly\Astrondo.Periwinkly.csproj"  PrivateAssets="compile;build;analyzers" />
-  </ItemGroup>
-<PropertyGroup>
-   <LangVersion>8.0</LangVersion>
-</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Astrondo.Periwinkly\Astrondo.Periwinkly.csproj"  PrivateAssets="compile;build;analyzers" />
+	</ItemGroup>
+	<PropertyGroup>
+		<LangVersion>8.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup>
+		<BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
+		<VersionPrefix>1.0.$(BuildNumber)</VersionPrefix>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\.assets\images\icon.png" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 </Project>

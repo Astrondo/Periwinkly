@@ -1,26 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net6.0;netstandard2.0;net48;</TargetFrameworks>
-    <Authors>Astrondo</Authors>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Astrondo/Periwinkly</PackageProjectUrl>
-    <Description>Shelly Iot device client .NET 6, .NET Standard 2.0, .NET Framework</Description>
-    <Copyright>© mindrevolution digital Ltd 2022</Copyright>
-    <PackageTags>shelly;periwinkly;netstandard;I0T</PackageTags>
-    <Product>Astrondo.Periwinkly</Product> 
-  </PropertyGroup>
-  <ItemGroup>    
-  <PackageReference Include="System.Text.Json" Version="6.0.2" />
-  <PackageReference Include="System.Net.Http" Version="4.3.4"  />
-  <PackageReference Include="System.Net.Http.Json" Version="6.0.0"  />
-  
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Models\HttpClient\ShellyRequireAuthErrorResponse.cs" />
-    <Compile Remove="Models\HttpClient\ShellyRequireAuthResponse.cs" />
-  </ItemGroup>
-<PropertyGroup>
-   <LangVersion>8.0</LangVersion>
-</PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;netstandard2.0;net48;</TargetFrameworks>
+		<Authors>Astrondo</Authors>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/Astrondo/Periwinkly</PackageProjectUrl>
+		<Description>Shelly Iot device client .NET 6, .NET Standard 2.0, .NET Framework</Description>
+		<Copyright>© mindrevolution digital Ltd 2022</Copyright>
+		<PackageTags>shelly;periwinkly;netstandard;I0T</PackageTags>
+		<Product>Astrondo.Periwinkly</Product>
+		<PackageIcon>Logo_128.png</PackageIcon>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="System.Text.Json" Version="6.0.2" />
+		<PackageReference Include="System.Net.Http" Version="4.3.4"  />
+		<PackageReference Include="System.Net.Http.Json" Version="6.0.0"  />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="Models\HttpClient\ShellyRequireAuthErrorResponse.cs" />
+		<Compile Remove="Models\HttpClient\ShellyRequireAuthResponse.cs" />
+	</ItemGroup>
+	<PropertyGroup>
+		<LangVersion>8.0</LangVersion>
+	</PropertyGroup>
+	<PropertyGroup>
+		<BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
+		<VersionPrefix>1.0.$(BuildNumber)</VersionPrefix>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\.assets\Logo_128.png" Pack="true" PackagePath="\"/>
+	</ItemGroup>
 </Project>
