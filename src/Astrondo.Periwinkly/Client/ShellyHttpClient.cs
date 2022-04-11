@@ -161,11 +161,8 @@ namespace Astrondo.Periwinkly.Client
             using (SHA256 hash = SHA256.Create())
             {
                 var ha1Hashed = HashString(hash, ha1);
-                Console.WriteLine("ha1:" + ha1Hashed);
                 var ha2Hashed = HashString(hash, ha2);
-                Console.WriteLine("ha2:" + ha2Hashed);
                 var unHashedString = $"{ha1Hashed}:{nonce}:1:{cNonce}:auth:{ha2Hashed}";
-                Console.WriteLine("unHashedString:" + unHashedString);
 
                 authModel.Response = HashString(hash, unHashedString);
             }
