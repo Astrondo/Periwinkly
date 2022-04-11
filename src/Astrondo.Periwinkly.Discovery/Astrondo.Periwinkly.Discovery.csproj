@@ -17,7 +17,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Astrondo.Periwinkly\Astrondo.Periwinkly.csproj"  PrivateAssets="compile;build;analyzers" />
+		<ProjectReference Include="..\Astrondo.Periwinkly\Astrondo.Periwinkly.csproj"/>
 	</ItemGroup>
 	<PropertyGroup>
 		<LangVersion>8.0</LangVersion>
