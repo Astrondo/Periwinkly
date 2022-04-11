@@ -27,6 +27,6 @@
 		<VersionPrefix>1.0.$(BuildNumber)</VersionPrefix>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Include="..\..\.assets\images\icon.png" Pack="true" PackagePath="\"/>
+		<None Include="..\..\.assets\Logo_128.png" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 </Project>
