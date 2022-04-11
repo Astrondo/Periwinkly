@@ -1,9 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Astrondo.Periwinkly;
 using Astrondo.Periwinkly.Capabilities;
-using Astrondo.Periwinkly.Client;
 using Astrondo.Periwinkly.Discovery;
-using static Astrondo.Periwinkly.Client.ShellyHttpClient;
+using System;
 
 Console.WriteLine("Hello, World!");
 

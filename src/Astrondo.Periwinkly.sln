@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31912.275
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly", "Astrondo.Periwinkly\Astrondo.Periwinkly.csproj", "{149BAC62-D04D-47B2-9317-985A38D52FFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astrondo.Periwinkly", "Astrondo.Periwinkly\Astrondo.Periwinkly.csproj", "{149BAC62-D04D-47B2-9317-985A38D52FFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly.Discovery", "Astrondo.Periwinkly.Discovery\Astrondo.Periwinkly.Discovery.csproj", "{378015D9-C9BA-4013-88CE-9B7F29EF088E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astrondo.Periwinkly.Discovery", "Astrondo.Periwinkly.Discovery\Astrondo.Periwinkly.Discovery.csproj", "{378015D9-C9BA-4013-88CE-9B7F29EF088E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly.TestTool", "Astrondo.Periwinkly.TestTool\Astrondo.Periwinkly.TestTool.csproj", "{14A17BA1-52F7-4A21-BD90-0362915C25A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astrondo.Periwinkly.TestTool", "Astrondo.Periwinkly.TestTool\Astrondo.Periwinkly.TestTool.csproj", "{14A17BA1-52F7-4A21-BD90-0362915C25A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{04BC6D40-8FE4-4324-943E-51E406CBC297}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrondo.Periwinkly.Tests", "Astrondo.Periwinkly.Tests\Astrondo.Periwinkly.Tests.csproj", "{C084E970-B8B1-40D6-B4CD-0AF686CB59BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Astrondo.Periwinkly.Tests", "Astrondo.Periwinkly.Tests\Astrondo.Periwinkly.Tests.csproj", "{C084E970-B8B1-40D6-B4CD-0AF686CB59BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

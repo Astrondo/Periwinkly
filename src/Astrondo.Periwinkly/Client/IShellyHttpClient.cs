@@ -1,4 +1,7 @@
-﻿namespace Astrondo.Periwinkly.Client
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
+
+namespace Astrondo.Periwinkly.Client
 {
     public interface IShellyHttpClient
     {

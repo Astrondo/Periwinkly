@@ -3,12 +3,13 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Astrondo.Periwinkly.Discovery\Astrondo.Periwinkly.Discovery.csproj" />
+    <ProjectReference Include="..\Astrondo.Periwinkly\Astrondo.Periwinkly.csproj" />
   </ItemGroup>
-
+<PropertyGroup>
+   <LangVersion>preview</LangVersion>
+</PropertyGroup>
 </Project>

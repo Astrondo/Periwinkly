@@ -1,5 +1,7 @@
 ﻿using Astrondo.Periwinkly.Client;
 using Astrondo.Periwinkly.Models.Switches;
+using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Astrondo.Periwinkly.Endpoints
 {

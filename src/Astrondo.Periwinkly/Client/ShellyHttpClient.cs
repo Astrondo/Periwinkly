@@ -3,11 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Net.Http.Json;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Astrondo.Periwinkly.Client
@@ -15,6 +17,7 @@ namespace Astrondo.Periwinkly.Client
     public partial class ShellyHttpClient : IShellyHttpClient
     {
         HttpClient _httpClient;
+        static Random _random = new Random();
         public ShellyHttpClient(string ipAddress, string? password = null, string? proxyUrl = null)
         {
             var httpClientHandler = new HttpClientHandler();
@@ -115,7 +118,7 @@ namespace Astrondo.Periwinkly.Client
             //qop="auth", realm="shellypro1-30c6f7849da4", nonce="62519f86", algorithm=SHA-256
 
             var str = postResponse.Headers.WwwAuthenticate.First().Parameter;
-            var fieldStrs = str.Split(", ");
+            var fieldStrs = str.Split(new string[] { ", " }, StringSplitOptions.None);
             var fields = new Dictionary<string, string>();
             foreach (var field in fieldStrs)
             {
@@ -141,7 +144,8 @@ namespace Astrondo.Periwinkly.Client
         public static ShellyRPCAuthModel CreateAuthModel(string password, ShellySessionAuthModel shellyAuthRequirements)
         {
             var nonce = Convert.ToInt64(shellyAuthRequirements.Nonce, 16);
-            return CreateAuthModel(password, shellyAuthRequirements.Realm, nonce, Random.Shared.Next(1000000), "admin", "SHA-256");
+            var cNonce = _random.Next(1000000);
+            return CreateAuthModel(password, shellyAuthRequirements.Realm, nonce, cNonce, "admin", "SHA-256");
         }
         public static ShellyRPCAuthModel CreateAuthModel(string password, string realm, long nonce, long cNonce, string username, string algo)
         {

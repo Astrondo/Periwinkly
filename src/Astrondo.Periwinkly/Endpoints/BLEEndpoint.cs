@@ -1,6 +1,7 @@
 ﻿using Astrondo.Periwinkly.Client;
 using Astrondo.Periwinkly.Models;
 using Astrondo.Periwinkly.Models.BLE;
+using System.Threading.Tasks;
 
 namespace Astrondo.Periwinkly.Endpoints
 {

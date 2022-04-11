@@ -1,5 +1,6 @@
 ﻿using Astrondo.Periwinkly.Client;
 using Astrondo.Periwinkly.Models.Ethernet;
+using System.Threading.Tasks;
 
 namespace Astrondo.Periwinkly.Endpoints
 {
