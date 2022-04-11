@@ -10,6 +10,9 @@
 		<PackageTags>shelly;periwinkly;netstandard;IoT</PackageTags>
 		<Product>Astrondo.Periwinkly.Discovery</Product>
 		<PackageIcon>Logo_128.png</PackageIcon>
+
+		<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -17,7 +20,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Astrondo.Periwinkly\Astrondo.Periwinkly.csproj"/>
+		<ProjectReference Include="..\Astrondo.Periwinkly\Astrondo.Periwinkly.csproj">
+			<ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+			<IncludeAssets>Astrondo.Periwinkly.dll</IncludeAssets>
+		</ProjectReference>
 	</ItemGroup>
 	<PropertyGroup>
 		<LangVersion>8.0</LangVersion>
@@ -29,4 +35,9 @@
 	<ItemGroup>
 		<None Include="..\..\.assets\Logo_128.png" Pack="true" PackagePath="\"/>
 	</ItemGroup>
+	<Target DependsOnTargets="ResolveReferences" Name="CopyProjectReferencesToPackage">
+		<ItemGroup>
+			<BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))"/>
+		</ItemGroup>
+	</Target>
 </Project>
